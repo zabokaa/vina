@@ -1,10 +1,10 @@
-# :purple_circle: *Feminism Quiz* :purple_circle:
+# :purple_circle: *Viña - your vinotheque* :purple_circle:
 
-
+Have you ever found yourself standing in front of the overwhelming wine cupboard in a supermarket, not knowing what to buy? Me: Yes! And my friends too. I was imagining how great it would be to have an app that serves as both my private wine library and a platform for showcasing recommendations from my friends. Even better, with their stories of the evening added - helping me remember which wine I like.
 
  ![mockup](./assets/img/mockup.png)
 
-💜 The deployed page can be found [here](https://zabokaa.github.io/FeminismQuiz/) ✊
+🍷 The deployed page can be found [here](https://xxxx) 🍷
 
 ## Table of Contents
 
@@ -23,9 +23,9 @@
 
 ## Objective
 
-- Hands-on learning JavaScript basics by building an interactive front-end application
-- To offer a stimulating quiz experience that entertains online users
-- Users visiting the site aim to engage in an online quiz to evaluate their general or specific knowledge about women's history in Germany
+- Hands-on learning by building a full-stack web app
+- To offer a help for users to decide which bottle of wine to buy
+- Creating a platform for wine lovers to share their recomendations as well as their experiences
 
 ## User Stories
 
@@ -129,20 +129,19 @@ I did research about feminist typography and picked two fonts out of those sugge
 
 ## Technologies
 
-Python | HTML | CSS | JavaScript | Django 
+Python | HTML | CSS | JavaScript | Django
 
 ## Project Status
 
-Project is: in process 
+Project is: in process
 
 ## Deployment
 
-- The site is deployed on Github Pages.
+- The site is deployed with Heroku.
 
   HOW TO:
 
   1. **Go to Repository Settings:**
-     In your GitHub repository, navigate to the "Settings" tab.
   
   2. **Scroll Down to GitHub Pages Section:**
      In the Settings, scroll down to the "GitHub Pages" section.
