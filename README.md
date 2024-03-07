@@ -29,13 +29,19 @@ Have you ever found yourself standing in front of the overwhelming wine cupboard
 
 ## User Stories
 
-- As a user, I want interactive learning.
-- As a user, I want to see the correct and incorrect answers for each question.
-- As a user, I like to have theh possibility to get more background information about the correct answer.
+### For Logged-in-user
+
+- As a user, I want to add and delete wines to my private library/vinotheque
+- As a user, I want to ad a new entry for a wine
+- As a user, I want to upload an image of the wine bottle
 - As a user, I expect a consistent and responsive design for easy use on various devices, prioritizing mobile devices first.
-- As a user, I want new questions randomly picked for a new quiz round.
-- As a user, I want to see my score at the end of a round.
+
+### For Guest-user
+
+- As a user, I want to read recommendations.
+- As a user, I want to be informed about the aim of the page.
 - As a user, I want to easily navigate the site.
+- As a user, I want to be able to create my own profile.
 
 ## Key Features
 
