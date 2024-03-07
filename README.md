@@ -23,7 +23,7 @@ Have you ever found yourself standing in front of the overwhelming wine cupboard
 
 ## Objective
 
-- Hands-on learning by building a full-stack web app
+- Hands-on learning by building an interactive, data-based web app
 - To offer a help for users to decide which bottle of wine to buy
 - Creating a platform for wine lovers to share their recomendations as well as their experiences
 
