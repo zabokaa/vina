@@ -29,19 +29,25 @@ Have you ever found yourself standing in front of the overwhelming wine cupboard
 
 ## User Stories
 
-### For Logged-in-user
+### As a Logged-in-user [...]
 
-- As a user, I want to add and delete wines to my private library/vinotheque
-- As a user, I want to ad a new entry for a wine
-- As a user, I want to upload an image of the wine bottle
-- As a user, I expect a consistent and responsive design for easy use on various devices, prioritizing mobile devices first.
+- I want to add and delete wines to my private library/vinotheque.
+- I want to add a new entry (= post) for a wine.
+- I want to upload an image of the wine bottle.
+- I want to commment on my own or others users' post.
+- I expect a consistent and responsive design for easy use on various devices, prioritizing mobile devices first.
 
-### For Guest-user
+### As a Guest-user [...]
 
-- As a user, I want to read recommendations.
-- As a user, I want to be informed about the aim of the page.
-- As a user, I want to easily navigate the site.
-- As a user, I want to be able to create my own profile.
+- I want to read recommendations (posts and comments).
+- I want to be informed about the aim of the page.
+- I want to easily navigate the site.
+- I want to be able to create my own profile.
+
+### As a Super-user = Admin [...]
+
+- I want to to approve or disapprove user's new entries/posts
+- I want to approve or dissaprove comments on existing entries.
 
 ## Key Features
 
