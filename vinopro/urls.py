@@ -25,7 +25,6 @@ urlpatterns = [
     path("", intro_views.age_form, name="home"),
     path("intro/", intro_views.age_verification, name="intro"),
     path("admin/", admin.site.urls),
-    # path("blog/", blog_views.showblog, name="blog"),
-    path("", include("blog.urls"), name='blog-urls'),
+    path("blog/", include("blog.urls"), name='blog-urls'),
 ]
 
