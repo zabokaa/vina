@@ -26,13 +26,15 @@ class Post(models.Model):
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+    winery = models.CharField(max_length=100)
+    grapes = models.CharField(max_length=200)
+    region = models.CharField(max_length=200, null=True)
     year = models.PositiveIntegerField()
     shop = models.CharField(max_length=200)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    status = models.CharField(choices=STATUS_CHOICES, default=0)
-    winery = models.CharField(max_length=200)
-    grapes = models.CharField(max_length=200)
+    status = models.IntegerField(choices=STATUS_CHOICES, default=0)                 
+
 # Meta Class
     class Meta:
         ordering = ["created_on"]
@@ -58,5 +60,4 @@ class Comment(models.Model):
         ordering = ["created_on"]
     def __str__(self):
         return f"Comment {self.body} by {self.author}"
-    
     
