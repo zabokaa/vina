@@ -26,6 +26,6 @@ urlpatterns = [
     path("intro/", intro_views.age_verification, name="intro"),
     path("admin/", admin.site.urls),
     # path("blog/", blog_views.showblog, name="blog"),
-    path('blog/', PostList.as_view(), name='post_list'),
+    path('blog/', PostList.as_view(), name='blog'),
 ]
 
