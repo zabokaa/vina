@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from intro import views as intro_views
-from blog import views as blog_views
+
 # from blog.views import PostList
 
 
@@ -25,7 +25,7 @@ urlpatterns = [
     path("", intro_views.age_form, name="home"),
     path("intro/", intro_views.age_verification, name="intro"),
     path("admin/", admin.site.urls),
-    path("blog/", blog_views.showblog, name="blog"),
-    # path('blog/', PostList.as_view(), name='blog'),
+    # path("blog/", blog_views.showblog, name="blog"),
+    path("", include("blog.urls"), name='blog-urls'),
 ]
 
