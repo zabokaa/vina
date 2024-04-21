@@ -3,6 +3,8 @@ from django.views import generic
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
+from django.contrib import messages
+from django.contrib.auth.models import User
 
 
 # Create your views here:
@@ -48,9 +50,17 @@ def post_detail(request, slug):
          "comment_form": comment_form,}
     )
 
+def profile_page(request):
+    """
+        Display profile page for the user.
+    """
+    user = get_object_or_404(User, user=request.user)
+    comments = user.commenter.all()
+    
+
 def comment_edit(request, slug, comment_id):
     """
-    Display edit and delete buttons for your own comments.
+    Display edit button for your own comments.
     """
     if request.method == "POST":
 
@@ -64,5 +74,21 @@ def comment_edit(request, slug, comment_id):
             comment.post = post
             comment.approved = False
             comment.save()
+
+    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+def comment_delete(request, slug, comment_id):
+    """
+     Display delete button for your own comments.
+    """
+    queryset = Post.objects.filter(status=1)
+    post = get_object_or_404(queryset, slug=slug)
+    comment = get_object_or_404(Comment, pk=comment_id)
+
+    if comment.author == request.user:
+        comment.delete()
+        messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
+    else:
+        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
