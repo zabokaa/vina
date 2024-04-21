@@ -5,7 +5,7 @@ from django.http import JsonResponse
 # Create your views here.
 def age_form(request):
     """displaying the age verification form"""
-    return render(request, 'intro/age_verification.html')
+    return render(request, 'intro/index.html')
 
 def age_verification(request):
     """checking if user is adult: only 18+years old can enter the page"""
