@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 STATUS_CHOICES = ((0, "draft"), (1, "published"))
 # Create your models here.
