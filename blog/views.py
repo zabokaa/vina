@@ -4,8 +4,6 @@ from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
 from django.contrib import messages
-from django.contrib.auth.models import User
-
 
 # Create your views here:
 
@@ -50,14 +48,6 @@ def post_detail(request, slug):
          "comment_form": comment_form,}
     )
 
-def profile_page(request):
-    """
-        Display profile page for the user.
-    """
-    user = get_object_or_404(User, user=request.user)
-    comments = user.commenter.all()
-    
-
 def comment_edit(request, slug, comment_id):
     """
     Display edit button for your own comments.
@@ -74,6 +64,10 @@ def comment_edit(request, slug, comment_id):
             comment.post = post
             comment.approved = False
             comment.save()
+            messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
+        else:
+            messages.add_message(request, messages.ERROR,
+                                 'Error updating comment!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
