@@ -24,7 +24,7 @@ from intro import views as intro_views
 urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path("admin/", admin.site.urls),
-    path("blog/", include("blog.urls"), name='blog-urls'),
+    path("blog/", include("blog.urls"), name="blog"),
     path("intro/", intro_views.age_verification, name="intro"),
     path("summernote/", include("django_summernote.urls")),
     path("", intro_views.age_form, name="home"),

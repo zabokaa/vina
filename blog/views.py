@@ -1,14 +1,14 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from .models import Post, Comment
 from .forms import CommentForm
-from django.contrib import messages
+
 
 # Create your views here:
 
 class PostList(generic.ListView):
-    model = Post
     queryset = Post.objects.filter(status=1)
     template_name = "blog/index.html"
     paginate_by = 4
