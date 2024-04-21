@@ -36,6 +36,7 @@ Have you ever found yourself standing in front of the overwhelming wine cupboard
 - I want to upload an image of the wine bottle.
 - I want to commment on my own or others users' post.
 - I want to be able to edit or delete my comments.
+- I want to see if I am logged-in or not.
 - I expect a consistent and responsive design for easy use on various devices, prioritizing mobile devices first.
 
 ### As a Guest-user [...]
