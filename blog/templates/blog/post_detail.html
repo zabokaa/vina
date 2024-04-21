@@ -29,7 +29,37 @@
                 </p>
             </div>
         </div>
+        <div class="col-md-4">
+          <div class="card mb-4 mt-3 card-body card-text details-card">
+              <div class="card-body">
+                  <h5 class="card-title details-title">Details</h5>
+                  <p class="card-text">
+                      <strong>Winery:</strong> {{ post.winery }}<br>
+                      <strong>Region:</strong> {{ post.region }}<br>
+                      <strong>Grapes:</strong> {{ post.grapes }}<br>
+                      <strong>Year:</strong> {{ post.year }}<br>
+                      <strong>Shop:</strong> {{ post.shop }}
+                  </p>
+              </div>
+              
+          </div>
+          <!-- Display like button -->
+        <div class="row">
+          <div class="col-12">
+              <form method="post" action="{% url 'like_post' post.id %}">
+                  {% csrf_token %}
+                  <button type="submit">
+                      {% if user in post.likes.all %}
+                          <i class="fas fa-heart"></i> Unlike
+                      {% else %}
+                          <i class="far fa-heart"></i> Like
+                      {% endif %}
+                  </button>
+              </form>
+          </div>
+        </div>
     </div>
+    
     <!-- Display number of comments -->
   <div class="row">
     <div class="col-12">

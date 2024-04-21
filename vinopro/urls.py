@@ -27,6 +27,7 @@ urlpatterns = [
     path("blog/", include("blog.urls"), name="blog"),
     path("intro/", intro_views.age_verification, name="intro"),
     path("summernote/", include("django_summernote.urls")),
+    path("vinoteka/", include("vinoteka.urls")),
     path("", intro_views.age_form, name="home"),
 ]
 

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>List of Wines you like:</h2>
+    {% for post in posts %}
+        <div>
+            <h3><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a> | {{ post.winery }}</h3>
+        </div>
+    {% empty %}
+        <p>You have not liked any posts yet.</p>
+    {% endfor %}
+{% endblock %}

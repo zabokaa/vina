@@ -34,7 +34,8 @@ class Post(models.Model):
     shop = models.CharField(max_length=200)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS_CHOICES, default=0)                 
+    status = models.IntegerField(choices=STATUS_CHOICES, default=0) 
+    likes = models.ManyToManyField(User, related_name='liked_posts')                
 
 # Meta Class
     class Meta:

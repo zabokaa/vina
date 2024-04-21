@@ -10,7 +10,7 @@ body {
 }
 
 .light-bg {
-    background-color: #5E2028;;
+    background-color: #5E2028;
 }
 
 .main-bg {
@@ -79,6 +79,16 @@ body {
     z-index: 100;
 }
 
+.details-card {
+    border: 2px solid #5E2028; 
+}
+
+.details-title {
+    font-family: Playfair, sans-serif;
+    color: #5E2028;
+    text-transform: uppercase;
+}
+
 .post-link {
     text-decoration: none;
     color: #445261;
@@ -130,7 +140,7 @@ body {
 
 .btn-delete {
     color: #fff;
-    background: #E84610;
+    background: #5E2028;
 }
 
 .btn-like:hover,
