@@ -8,4 +8,4 @@ class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1)
     template_name = "blog/index.html"
-    paginate_by = 8
+    paginate_by = 4
