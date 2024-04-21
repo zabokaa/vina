@@ -2,27 +2,15 @@ body {
     background-color: #F9FAFC;
 }
 
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
+.logo {
+    font-family: Playfair, sans-serif;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: #4A4A4F;
-}
-
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
+    color: #5E2028;
 }
 
 .light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
+    background-color: #5E2028;;
 }
 
 .main-bg {
@@ -43,7 +31,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #5E2028;
 }
 
 .scale {
@@ -51,7 +39,7 @@ body {
     height: auto;
 }
 
-.author {
+.winery {
     color: white;
     margin: 4px;
     text-transform: uppercase;
@@ -98,7 +86,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #325b51;
 }
 
 .post-title {
@@ -147,7 +135,7 @@ body {
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #325b51;
     background: transparent;
     border: none;
 }
