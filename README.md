@@ -113,7 +113,7 @@ I did research about feminist typography and picked two fonts out of those sugge
 
 ## Technologies
 
-Python | HTML | CSS | JavaScript | Django | Cloudinary | Whitenoise | Gunicorn | Crispy
+Python | HTML | CSS | JavaScript | Django | Bootstrap5 | Whitenoise | Gunicorn | Crispy
 
 ## Project Status
 
