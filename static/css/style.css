@@ -38,6 +38,10 @@ body {
     color: var(--secondary-color); 
 }
 
+.logo img {
+    border-radius: 5px;
+}
+
 /* blog site */
 .card {
     border: none;
@@ -62,12 +66,12 @@ body {
 }
 
 .winery {
-    color: white;
-    margin: 4px;
+    color: var(--light-color);
+    margin: 5px;
     text-transform: uppercase;
 }
 
-.masthead {
+.bloghead {
     margin-top: 10px;
     overflow: hidden;
     position: relative;
@@ -76,13 +80,14 @@ body {
     width: 100%;
 }
 
-.masthead-text {
+
+.bloghead-text {
     background-color: #445261;
     color: white;
     position: relative;
 }
 
-.masthead-image {
+.bloghead-img {
     position: relative;
     overflow: hidden;
 }
