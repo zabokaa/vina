@@ -6,6 +6,10 @@ Have you ever found yourself standing in front of the overwhelming wine cupboard
 
 🍷 The deployed page can be found [here](https://vina1312-ae94d8859b43.herokuapp.com/) 🍷
 
+If you do not want to register for testing feel free to use:
+Username: Winelover
+Password: oenology
+
 ## Table of Contents
 
 - [Objective](#objective)
