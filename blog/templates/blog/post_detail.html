@@ -24,6 +24,7 @@
                     {{ post.content | safe }}
                 </p>
             </div>
+          
         </div>
         <div class="col-md-4">
           <div class="card mb-4 mt-3 card-body card-text top details-card">
@@ -37,11 +38,12 @@
                       <strong>Shop:</strong> {{ post.shop }}
                   </p>
               </div>
-              
+             
           </div>
           <!-- Display like button -->
         <div class="row">
           <div class="col-12">
+          
               <form method="post" action="{% url 'like_post' post.id %}">
                   {% csrf_token %}
                   <button class="btn-like" type="submit">
@@ -58,7 +60,11 @@
     
     <!-- Display number of comments -->
   <div class="row">
+    <div class="col-12 mb-3">
+      <a href="{% url 'blog' %}" class="btn btn-signup">Back Home</a>
+    </div>
     <div class="col-12">
+     
       <strong class="text-secondary">
         <i class="far fa-comments"></i> {{ comment_count }}
       </strong>
