@@ -1,12 +1,15 @@
-body {
-    background-color: #F9FAFC;
+:root {
+    --primary-color: #5E2028;
+    --secondary-color: #42a5ff;
+    --tertiary-color: #445261;
+    --quaternary-color: #188181;
+    --light-color: #DBEEFF;
+  
+
 }
 
-.logo {
-    font-family: Playfair, sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #5E2028;
+body {
+    background-color: var(--light-color);
 }
 
 .light-bg {
@@ -14,7 +17,21 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: var(--light-color);
+}
+
+/* Header */
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--light-color);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--secondary-color); 
 }
 
 .card {
@@ -156,4 +173,28 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--primary-color) !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer > * {
+    display: block;
+}
+
+.social-networks {
+    list-style: none; /* remove list bullets */
+    padding: 0; /* remove padding */
+    display: flex; /* display in one row */
+    justify-content: center; /* center items horizontally */
+}
+
+.social-networks li {
+    margin: 0 10px; /* add some horizontal spacing between icons */
 }
