@@ -7,8 +7,8 @@ Have you ever found yourself standing in front of the overwhelming wine cupboard
 🍷 The deployed page can be found [here](https://vina1312-ae94d8859b43.herokuapp.com/) 🍷
 
 If you do not want to register for testing feel free to use:
-Username: Winelover
-Password: oenology
+<Username: Winelover>
+<Password: oenology>
 
 ## Table of Contents
 
@@ -96,11 +96,9 @@ I did research about feminist typography and picked two fonts out of those sugge
 
 ### Logo
 
-
 ## Testing
 
 ### Manual
-
 
 ### Official Validators
 
@@ -144,7 +142,7 @@ Project is: in process
   6. **Access Your Deployed Site:**
      Once the build is successful, you can access your deployed site using the provided link.
 
-  Your project is now live on GitHub Pages! 
+  Your project is now live on GitHub Pages!
   🍷 Cheers !!
 
 ## Acknowledgements
