@@ -10,6 +10,9 @@
 
 body {
     background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .light-bg {
@@ -181,6 +184,7 @@ body {
     text-align: center;
     color: var(--secondary-color);
     background-color: var(--primary-color) !important;
+    margin-top: auto;
     padding-top: 20px;
     padding-bottom: 20px;
 }
