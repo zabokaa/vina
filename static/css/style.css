@@ -23,7 +23,7 @@ body {
 
 /* Header */
 .navbar {
-    background-color: var(--primary-color) !important;
+    background-color: var(--primary-color);
     font-size: 1.5em;
 }
 
@@ -34,6 +34,21 @@ body {
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--secondary-color); 
+}
+
+.navbar-toggler {
+    border: none;
+    color: var(--light-color);
+}
+
+.navbar-toggler-icon {
+    color: var(--light-color);
+    content: "";
+}
+
+.navbar-toggler-icon::before {
+    content: '\2630'; 
+    font-size: 28px;
 }
 
 .logo img {
@@ -179,23 +194,25 @@ body {
     text-decoration: underline;
 }
 
-.btn-like {
-    color: var(--primary-color);
-    border: none;
-    background: transparent;
-}
+
 
 .btn-delete {
     color: #fff;
     background: var(--primary-color);
 }
 
-/* .btn-like:hover,
+.btn-like {
+    color: var(--primary-color);
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
 .btn-like:active {
-    color: #325b51;
+    color: var(--secondary-color);
     background: transparent;
     border: none;
-} */
+}
 
 .faded {
     color: rgb(172, 175, 175);
