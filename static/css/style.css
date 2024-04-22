@@ -38,6 +38,7 @@ body {
     color: var(--secondary-color); 
 }
 
+/* blog site */
 .card {
     border: none;
     background-color: transparent;
@@ -100,6 +101,20 @@ body {
     z-index: 100;
 }
 
+.page-link {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
 .details-card {
     border: 2px solid var(--primary-color); 
 }
@@ -115,8 +130,7 @@ body {
     color: #445261;
 }
 
-.post-link:hover,
-.page-link {
+.post-link:hover{
     color: var(--secondary-color);
 }
 
