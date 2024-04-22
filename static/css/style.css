@@ -130,6 +130,10 @@ body {
     text-transform: uppercase;
 }
 
+.card-text {
+    line-height: 2.3;
+}
+
 .post-link {
     text-decoration: none;
     color: #445261;
