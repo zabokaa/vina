@@ -44,7 +44,7 @@
           <div class="col-12">
               <form method="post" action="{% url 'like_post' post.id %}">
                   {% csrf_token %}
-                  <button type="submit">
+                  <button class="btn-like" type="submit">
                       {% if user in post.likes.all %}
                           <i class="fas fa-heart"></i> Unlike
                       {% else %}

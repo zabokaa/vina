@@ -190,12 +190,12 @@ body {
     background: var(--primary-color);
 }
 
-.btn-like:hover,
+/* .btn-like:hover,
 .btn-like:active {
     color: #325b51;
     background: transparent;
     border: none;
-}
+} */
 
 .faded {
     color: rgb(172, 175, 175);
