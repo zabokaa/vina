@@ -2,7 +2,7 @@
 
 Have you ever found yourself standing in front of the overwhelming wine cupboard in a supermarket, not knowing what to buy? Me: Yes! And my friends too. I was imagining how great it would be to have an app that serves as both my private wine library and a platform for showcasing recommendations from my friends. Even better, with their stories of the evening added - helping me remember which wine I like.
 
- ![mockup](./assets/img/mockup.png)
+ ![mockup](./assets/imgreadme/vinamockup.png)
 
 🍷 The deployed page can be found [here](https://vina1312-ae94d8859b43.herokuapp.com/) 🍷
 
