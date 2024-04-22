@@ -207,6 +207,32 @@ body {
     color: rgb(222, 146, 168);
 }
 
+/* Vinoteque/vinoteka site */
+.liked-wines-container {
+    display: flex; 
+    margin: 40px 60px;
+}
+
+.liked-wines {
+    flex: 2; /* take up 2/3 of the container */
+}
+
+.liked-wines-title {
+    color: var(--primary-color);
+    font-size: 3em;
+    margin-bottom: 20px;
+
+}
+
+.wine-image {
+    flex: 1; /* take up 1/3 of the container */
+    object-fit: cover; /* make the image cover its area */
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 5px; 
+}
+
+
 /* Footer */
 .footer {
     text-align: center;
