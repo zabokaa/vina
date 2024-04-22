@@ -37,7 +37,6 @@ If you do not want to register for testing feel free to use:
 
 - I want to add and delete wines to my private library/vinotheque.
 - I want to add a new entry (= post) for a wine.
-- I want to upload an image of the wine bottle.
 - I want to commment on my own or others users' post.
 - I want to be able to edit or delete my comments.
 - I want to see if I am logged-in or not.
@@ -46,7 +45,6 @@ If you do not want to register for testing feel free to use:
 ### As a Guest-user [...]
 
 - I want to read recommendations (posts and comments).
-- I want to be informed about the aim of the page.
 - I want to easily navigate the site.
 - I want to be able to create my own profile.
 
