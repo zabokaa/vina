@@ -97,10 +97,11 @@ def comment_delete(request, slug, comment_id):
 @login_required
 def like_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
-    if request.user in post.likes.all():
-        post.likes.remove(request.user)
-        messages.success(request, 'You have unliked this post. It will be removed from your Wine Cellar.')
-    else:
-        post.likes.add(request.user)
-        messages.success(request, 'You have liked this post. It will be added to your Wine Cellar.')
-    return HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
+    if request.method == 'POST':
+        if request.user in post.likes.all():
+            post.likes.remove(request.user)
+            messages.success(request, 'You have unliked this post. It will be removed from your Wine Cellar.')
+        else:
+            post.likes.add(request.user)
+            messages.success(request, 'You have liked this post. It will be added to your Wine Cellar.')
+    return HttpResponseRedirect(reverse('post_detail', args=[post.slug]))
