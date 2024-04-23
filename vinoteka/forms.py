@@ -12,7 +12,7 @@ class DiaryForm(forms.ModelForm):
         labels = {
             'wine': 'Wine name',
             'shop': 'Bought at',
-            'day': 'Date, pls use YYYY-MM-DD format',
+            'day': 'Date, using YYYY-MM-DD format',
             'occasion': 'Occasion, like Evening with friends, Beach picnic, etc.',
             'rating': 'Rating between 1 (excellent) and 6 (very bad)',
             'pic': 'Picture',
@@ -22,5 +22,6 @@ class DiaryForm(forms.ModelForm):
         }
         widgets = {
             'rating': forms.NumberInput(attrs={'min': 1, 'max': 6}),
+            'day': forms.DateInput(attrs={'placeholder': 'YYYY-MM-DD'}),
         }
 

@@ -220,11 +220,18 @@ body {
     color: rgb(222, 146, 168);
 }
 
+/* VINOTEKA */
+
 .liked-wines-title {
     color: var(--primary-color);
     font-size: 3em;
     margin-bottom: 20px;
+}
 
+.liked-wines-title-small {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .bg-overlay {

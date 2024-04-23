@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-lg-8 col-md-12">
             <div class="liked-wines">
-                <h2 class="liked-wines-title">List of Wines you like:</h2>
+                <h2 class="liked-wines-title">List of Liked Wine Posts</h2>
                 {% for post in posts %}
                     <div class="wine-detail">
                         <h3>🍷 <a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a> | {{ post.winery }}</h3>
@@ -23,10 +23,12 @@
     <hr>
     <div class="row">
         <div class="col-lg-6 col-md-12">
+            <h2>Add a new Wine Diary Entry:</h2>
             <!-- Include the form -->
             {% include 'vinoteka/create_diary.html' %}
         </div>
         <div class="col-lg-6 col-md-12">
+            <h2 class="liked-wines-title">My Wine Diary</h2>
             <!-- Include the form -->
             {% include 'vinoteka/diary_list.html' %}
         </div>
