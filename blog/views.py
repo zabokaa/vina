@@ -22,7 +22,7 @@ class PostList(generic.ListView):
 
 def post_detail(request, slug):
     """
-    Display a single blog post with comments form, 
+    Display a single blog post (approved posts only) with comments form, 
     and comments.
     """
     queryset = Post.objects.filter(status=1)
@@ -54,7 +54,7 @@ def post_detail(request, slug):
 
 def comment_edit(request, slug, comment_id):
     """
-    Display edit button for logged-in users' own comments.
+    Display edit button for logged-in users' own comments and handle edit request.
     """
     if request.method == "POST":
 
@@ -78,7 +78,7 @@ def comment_edit(request, slug, comment_id):
 
 def comment_delete(request, slug, comment_id):
     """
-    Display delete button for logged-in users' own comments.
+    Display delete button for logged-in users' own comments and handle delete request.
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
