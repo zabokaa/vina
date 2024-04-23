@@ -147,4 +147,4 @@ Project is: in process
 
 This project was based on full-stack course @ Code Institute.
 
-Ideas for code snippets (commented in my code)
+Creating ERD of whole project with Djangoviz [from](https://atlasgo.io/blog/2023/05/17/djangoviz)
