@@ -21,6 +21,6 @@ class DiaryForm(forms.ModelForm):
             'again': 'Would you buy it again?',
         }
         widgets = {
-            'rating': forms.NumberInput(attrs={'min': 1, 'max': 5}),
+            'rating': forms.NumberInput(attrs={'min': 1, 'max': 10}),
         }
 
