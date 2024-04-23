@@ -17,16 +17,7 @@ class PostList(generic.ListView):
 
 def post_detail(request, slug):
     """
-    Display an individual :model:`blog.Post`.
-
-    **Context**
-
-    ``post``
-        An instance of :model:`blog.Post`.
-
-    **Template:**
-
-    :template:`blog/post_detail.html`
+    Display a single blog post with comments.
     """
 
     queryset = Post.objects.filter(status=1)
@@ -82,7 +73,7 @@ def comment_edit(request, slug, comment_id):
 
 def comment_delete(request, slug, comment_id):
     """
-     Display delete button for your own comments.
+    Display delete button for your own comments.
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
@@ -104,7 +95,8 @@ def comment_delete(request, slug, comment_id):
 @login_required
 def like_post(request, post_id):
     """
-    Add or remove a post from the user's wine list (liked posts)."""
+    Add or remove a post from the user's wine list (liked posts).
+    """
     post = get_object_or_404(Post, id=post_id)
     if request.method == 'POST':
         if request.user in post.likes.all():
