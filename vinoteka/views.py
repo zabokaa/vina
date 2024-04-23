@@ -13,6 +13,7 @@ def liked_posts(request):
 
 @login_required
 def create_diary(request):
+    diaries = Diary.objects.filter(user=request.user)
     if request.method == 'POST':
         form = DiaryForm(request.POST)
         if form.is_valid():
@@ -22,4 +23,4 @@ def create_diary(request):
             return redirect('diary_detail', pk=diary.pk)
     else:
         form = DiaryForm()
-    return render(request, 'vinoteka/create_diary.html', {'form': form})
+    return render(request, 'vinoteka/create_diary.html', {'form': form, 'diaries': diaries})
