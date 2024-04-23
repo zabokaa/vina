@@ -20,3 +20,7 @@ class DiaryForm(forms.ModelForm):
             'foodpairing': 'Food pairing',
             'again': 'Would you buy it again?',
         }
+        widgets = {
+            'rating': forms.NumberInput(attrs={'min': 1, 'max': 5}),
+        }
+
