@@ -29,7 +29,7 @@ def create_diary(request):
             diary = form.save(commit=False)
             diary.user = request.user
             diary.save()
-            return redirect('diary_detail', pk=diary.pk)
+            return redirect('vinoteka')
     else:
         form = DiaryForm()
     return render(request, 'vinoteka/create_diary.html', {'form': form})
