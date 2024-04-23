@@ -11,16 +11,17 @@ class DiaryForm(forms.ModelForm):
         exclude = ['user']
         labels = {
             'wine': 'Wine name',
-            'shop': 'Shop',
+            'shop': 'Bought at',
             'day': 'Date',
             'occasion': 'Occasion',
             'rating': 'Rating',
             'pic': 'Picture',
             'memory': 'Memory',
             'foodpairing': 'Food pairing',
-            'again': 'Would you buy it again?',
+            'again': 'Would I buy it again?',
         }
         widgets = {
             'rating': forms.NumberInput(attrs={'min': 1, 'max': 10}),
+            'day': forms.DateInput(attrs={'type': 'date'}, format='%Y-%m-%d'),
         }
 
