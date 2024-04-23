@@ -4,7 +4,7 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-md-12">
+        <div class="col-lg-8 col-md-12 mb-4">
             <div class="liked-wines">
                 <h2 class="liked-wines-title">List of Liked Wine Posts</h2>
                 {% for post in posts %}
@@ -16,25 +16,26 @@
                 {% endfor %}
             </div>
         </div>
-        <div class="col-lg-4 col-md-12">
+        <div class="col-lg-4 col-md-12 mb-4">
             <img src="{% static 'img/reflection.jpg' %}" class="wine-image img-fluid">
         </div>  
     </div>
-    <hr>
+    <div class="mb-5">
+        <hr>
+    </div>
+    
     <div class="row">
         <div class="col-lg-6 col-md-12">
-            <div class="border m-3 p-3">
-                <h2>Add a new Wine Diary Entry:</h2>
+            <div class="border border-4 rounded p-5">
+                <h2>➕ New Wine Diary Entry ➕</h2>
                 <!-- Diary Entry Form -->
                 {% include 'vinoteka/create_diary.html' %}
             </div>
         </div>
         <div class="col-lg-6 col-md-12">
-
                 <h2 class="liked-wines-title">My Wine Diary</h2>
                 <!-- List (as table) of Diary Entries-->
                 {% include 'vinoteka/diary_list.html' %}
-
         </div>
     </div>
 </div>
