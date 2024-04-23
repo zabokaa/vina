@@ -22,6 +22,5 @@ class DiaryForm(forms.ModelForm):
         }
         widgets = {
             'rating': forms.NumberInput(attrs={'min': 1, 'max': 10}),
-            'day': forms.DateInput(attrs={'type': 'date'}, format='%Y-%m-%d'),
         }
 
