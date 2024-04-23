@@ -1,5 +1,13 @@
-<form method="post" action="{% url 'create_diary' %}">
+{% load crispy_forms_tags %}
+
+<form 
+    id="diaryForm" 
+    method="post" 
+    style="margin-top: 1.3em;"
+    action="{% url 'create_diary' %}"
+    >
     {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Create</button>
+    {{ form|crispy }}
+    <button id="submitButton" type="submit"
+    class="btn btn-signup btn-lg">Create</button>
 </form>
