@@ -19,7 +19,6 @@ class PostList(generic.ListView):
     paginate_by = 4
     
 
-
 def post_detail(request, slug):
     """
     Display a single blog post (approved posts only) with comments form, 

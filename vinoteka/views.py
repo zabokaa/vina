@@ -5,10 +5,13 @@ from .models import Diary
 from .forms import DiaryForm
 
 
-
 def diary_list(request):
+    """"
+    Display list of all diary entries created by the currently logged-in user.
+    """
     diaries = Diary.objects.filter(user=request.user)
     return render(request, 'vinoteka/diary_list.html', {'diaries': diaries})
+
 
 @login_required
 def liked_posts(request):
@@ -16,16 +19,21 @@ def liked_posts(request):
     Display list of posts liked by the currently logged-in user.
     """
     posts = Post.objects.filter(likes=request.user)
-    form = DiaryForm()  # create a DiaryForm instance and add form to the context
+    form = DiaryForm()
     diaries = Diary.objects.filter(user=request.user)
-    return render(request, 'vinoteka/liked_posts.html', {'posts': posts, 'form': form, 'diaries': diaries})
+    return render(
+        request,
+        'vinoteka/liked_posts.html',
+        {'posts': posts, 'form': form, 'diaries': diaries}
+        )
 
 
 @login_required
 def create_diary(request):
     """
     Displays form for creating a new diary entry
-    and handle POST request to save the new entry for the currently logged-in user.
+    and handle POST request to save the new entry
+    for the currently logged-in user.
     """
     diaries = Diary.objects.filter(user=request.user)
     if request.method == 'POST':
@@ -37,17 +45,24 @@ def create_diary(request):
             return redirect('vinoteka')
     else:
         form = DiaryForm()
-    return render(request, 'vinoteka/create_diary.html', {'form': form})
+    return render(
+        request,
+        'vinoteka/create_diary.html',
+        {'form': form}
+        )
+
 
 @login_required
 def diary_detail(request, pk):
     """
     Display details of a specific diary entry.
-    Only working for a diary entry that belongs to the currently logged-in user.
+    Only working for a diary entry that belongs
+    to the currently logged-in user.
     """
     diary = get_object_or_404(Diary, pk=pk, user=request.user)
     return render(
-        request, 
-        'vinoteka/diary_detail.html', 
+        request,
+        'vinoteka/diary_detail.html',
         {'diary': diary}
-    )
+        )
+
