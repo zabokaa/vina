@@ -228,18 +228,14 @@ body {
     margin-bottom: 20px;
 }
 
-.liked-wines-title-small {
-    color: var(--primary-color);
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
 .bg-overlay {
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--light-color);
     padding: 20px;
     border-radius: 5px;
 }
+
+#diaryForm
 
 /* Footer */
 .footer {
