@@ -10,16 +10,21 @@ from .forms import CommentForm
 # views
 
 class PostList(generic.ListView):
+    """
+    Display a list of approved posts,
+    4 posts per page. 
+    """
     queryset = Post.objects.filter(status=1)
     template_name = "blog/index.html"
     paginate_by = 4
+    
 
 
 def post_detail(request, slug):
     """
-    Display a single blog post with comments.
+    Display a single blog post with comments form, 
+    and comments.
     """
-
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comments = post.comments.all().order_by("-created_on")
@@ -49,7 +54,7 @@ def post_detail(request, slug):
 
 def comment_edit(request, slug, comment_id):
     """
-    Display edit button for your own comments.
+    Display edit button for logged-in users' own comments.
     """
     if request.method == "POST":
 
@@ -73,7 +78,7 @@ def comment_edit(request, slug, comment_id):
 
 def comment_delete(request, slug, comment_id):
     """
-    Display delete button for your own comments.
+    Display delete button for logged-in users' own comments.
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
@@ -81,7 +86,7 @@ def comment_delete(request, slug, comment_id):
 
     if comment.author == request.user:
         comment.delete()
-        messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
+        messages.add_message(request, messages.SUCCESS, 'Your comment is deleted!')
     else:
         messages.add_message(
             request,
@@ -102,9 +107,9 @@ def like_post(request, post_id):
         if request.user in post.likes.all():
             post.likes.remove(request.user)
             messages.success(request, 'You have unliked this post. '
-                             'It will be removed from your Wine Cellar.')
+                             'It will be removed from your Vinotheque.')
         else:
             post.likes.add(request.user)
             messages.success(request, 'You have liked this post. '
-                             'It will be added to your Wine Cellar.')
+                             'It will be added to your Vinotheque.')
     return HttpResponseRedirect(reverse('post_detail', args=[post.slug]))

@@ -3,7 +3,7 @@ from .models import Diary
 
 class DiaryForm(forms.ModelForm):
     """
-        A form for creating and updating Diary instances.
+        A form for creating Diary instances.
         The form includes all fields from the Diary model.
     """
     class Meta:
