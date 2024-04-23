@@ -1,7 +1,8 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from blog.models import Post
 from .models import Diary
+from .forms import DiaryForm
 
 
 @login_required
@@ -11,3 +12,14 @@ def liked_posts(request):
 
 
 @login_required
+def create_diary(request):
+    if request.method == 'POST':
+        form = DiaryForm(request.POST)
+        if form.is_valid():
+            diary = form.save(commit=False)
+            diary.user = request.user
+            diary.save()
+            return redirect('diary_detail', pk=diary.pk)
+    else:
+        form = DiaryForm()
+    return render(request, 'vinoteka/create_diary.html', {'form': form})
