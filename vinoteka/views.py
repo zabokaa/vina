@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib import messages
 from blog.models import Post
 from .models import Diary
 from .forms import DiaryForm
@@ -41,7 +42,10 @@ def create_diary(request):
             diary = form.save(commit=False)
             diary.user = request.user
             diary.save()
+            messages.add_message(request, messages.SUCCESS, 'Your diary entry has been added!')
             return redirect('vinoteka')
+        else:
+            messages.add_message(request, messages.ERROR,'There was an error in your entry. Please try again.')
     else:
         form = DiaryForm()
     return render(
