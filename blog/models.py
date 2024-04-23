@@ -15,7 +15,6 @@ class Post(models.Model):
         year (PositiveIntegerField): The year of the wine.
         shop (CharField): The shop where the wine can be bought.
         content (TextField): The description of the wine.
-        LATER: image=CloudinaryFiled('image', default:'placeholder) CLOUDINARY !
         created_on (DateTimeField): The date and time when the post was created. 
         status (CharField): The status of the post. Can be either 'draft' or 'published'.
         winery (CharField): The winery that produced the wine.

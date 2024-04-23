@@ -42,10 +42,16 @@ def create_diary(request):
             diary = form.save(commit=False)
             diary.user = request.user
             diary.save()
-            messages.add_message(request, messages.SUCCESS, 'Your diary entry has been added!')
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Your diary entry has been added!'
+                )
             return redirect('vinoteka')
         else:
-            messages.add_message(request, messages.ERROR,'There was an error in your entry. Please try again.')
+            messages.add_message(
+                request,
+                messages.ERROR,
+                'There was an error in your entry. Please try again.')
     else:
         form = DiaryForm()
     return render(
