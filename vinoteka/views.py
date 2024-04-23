@@ -35,7 +35,6 @@ def create_diary(request):
     and handle POST request to save the new entry
     for the currently logged-in user.
     """
-    diaries = Diary.objects.filter(user=request.user)
     if request.method == 'POST':
         form = DiaryForm(request.POST)
         if form.is_valid():
