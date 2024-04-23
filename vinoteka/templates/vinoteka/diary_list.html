@@ -1,0 +1,9 @@
+
+{% if diaries %}
+    {% for diary in diaries %}
+        <h2><a href="{% url 'diary_detail' diary.pk %}">{{ diary.wine }}</a></h2>
+        <p>{{ diary.rating }}</p>
+    {% endfor %}
+{% else %}
+    <p>You have not created any diary entries yet.</p>
+{% endif %}

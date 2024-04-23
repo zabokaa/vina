@@ -1,13 +1,4 @@
-{% if diaries %}
-    {% for diary in diaries %}
-        <h2>{{ diary.wine }}</h2>
-        <p>{{ diary.rating }}</p>
-    {% endfor %}
-{% else %}
-    <p>You have not created any diary entries yet.</p>
-{% endif %}
-
-<form method="post">
+<form method="post" action="{% url 'create_diary' %}">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Create</button>
