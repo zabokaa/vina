@@ -5,7 +5,7 @@ from .models import Diary
 from .forms import DiaryForm
 
 def diary_detail(request, pk):
-    diary = get_object_or_404(Diary, pk=pk)
+    diary = get_object_or_404(Diary, pk=pk, user=request.user)
     return render(request, 'vinoteka/diary_detail.html', {'diary': diary})
 
 def diary_list(request):
