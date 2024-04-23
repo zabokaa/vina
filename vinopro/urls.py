@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from intro import views as intro_views
+from django.conf import settings
+from django.conf.urls.static import static
 
 # from blog.views import PostList
 
@@ -31,3 +33,5 @@ urlpatterns = [
     path("", intro_views.age_form, name="home"),
 ]
 
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
