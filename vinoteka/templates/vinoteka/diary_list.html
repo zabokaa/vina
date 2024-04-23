@@ -1,8 +1,20 @@
 {% if diaries %}
-    {% for diary in diaries %}
-        <h2><a href="{% url 'diary_detail' diary.pk %}">{{ diary.wine }}</a></h2>
-        <p>{{ diary.rating }}</p>
-    {% endfor %}
+<table class="table table striped">
+    <thead>
+        <tr>
+            <th scope="col">Wine</th>
+            <th scope="col">Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for diary in diaries %}
+        <tr>
+            <td><a href="{% url 'diary_detail' diary.pk %}">{{ diary.wine }}</a></td>
+            <td>{{ diary.rating }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 {% else %}
     <p>You have not created any diary entries yet.</p>
 {% endif %}
