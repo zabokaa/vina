@@ -1,30 +1,74 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>{{ diary.wine }}</h2>
-<p>{{ diary.rating }}</p>
-<!-- Navigation Btn -->
-<a href="{% url 'vinoteka' %}" class="btn btn-signup">Back to Vinoteka</a>
-<!-- Delete Btn an confirmation modal -->
-<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
-    Delete Entry
-  </button>
-  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="deleteModalLabel">Confirm Delete</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+<div class="container">
+  <div class="row">
+    <!-- Image -->
+    <div class="col-md-4">
+      <img src="{{ diary.image.url }}" class="img-fluid" alt="{{ diary.wine }}">
+    </div>
+  
+    <!-- Diary details -->
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Wine</th>
+                <td>{{ diary.wine }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Rating</th>
+                <td>{{ diary.rating }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Occasion</th>
+                <td>{{ diary.occasion }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Shop</th>
+                <td>{{ diary.shop }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Day</th>
+                <td>{{ diary.day }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Memory</th>
+                <td>{{ diary.memory }}</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <!-- Add more diary details here -->
         </div>
-        <div class="modal-body">
-          Are you sure you want to delete this entry? This action can not be undone.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <form method="post" action="{% url 'diary_delete' diary.pk %}">
-            {% csrf_token %}
-            <button type="submit" class="btn btn-danger">Delete</button>
-          </form>
+      </div>
+    </div>
+  <!-- Navigation Btn -->
+  <a href="{% url 'vinoteka' %}" class="btn btn-signup">Back to Vinoteka</a>
+  <!-- Delete Btn an confirmation modal -->
+  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete Entry
+    </button>
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="deleteModalLabel">Confirm Delete</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to delete this entry? This action can not be undone.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <form method="post" action="{% url 'diary_delete' diary.pk %}">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
