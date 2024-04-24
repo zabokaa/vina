@@ -1,5 +1,5 @@
 {% if diaries %}
-<table class="table table striped">
+<table class="table table-striped">
     <thead>
         <tr>
             <th scope="col">Wine</th>
@@ -9,7 +9,7 @@
     <tbody>
         {% for diary in diaries %}
         <tr>
-            <td><a href="{% url 'diary_detail' diary.pk %}">{{ diary.wine }}</a></td>
+            <td><a href="{% url 'diary_detail' diary.pk %}" class="post-link">{{ diary.wine }}</a></td>
             <td>{{ diary.rating }}</td>
         </tr>
         {% endfor %}
