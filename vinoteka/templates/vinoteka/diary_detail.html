@@ -10,7 +10,6 @@
       <img src="{% if diary.image.url %}{{ diary.image.url }}{% else %}{% static 'img/diarydefault.jpg' %}{% endif %}" class="img-fluid" alt="{{ diary.wine }}">
     </div>
 
-  
     <!-- Diary details -->
     <div class="col-md-8">
       <div class="card">
@@ -48,11 +47,11 @@
         </div>
       </div>
     </div>
-  <!-- Navigation Btn -->
-  <div class="d-flex justify-content-center">
-  <a href="{% url 'vinoteka' %}" class="btn btn-signup">Back to Vinoteka</a>
+
+  <!-- Buttons -->
+  <div class="d-flex justify-content-center mt-3 mb-4">
   <!-- Delete Btn an confirmation modal -->
-  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+  <button type="button" class="btn btn-danger me-5" data-bs-toggle="modal" data-bs-target="#deleteModal">
       Delete Entry
     </button>
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
@@ -75,6 +74,8 @@
         </div>
       </div>
     </div>
+    <!-- Navigation Btn -->
+    <a href="{% url 'vinoteka' %}" class="btn btn-signup">Back to Vinoteka</a>
   </div>
 </div>
 </div>
