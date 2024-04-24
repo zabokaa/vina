@@ -80,5 +80,10 @@ def diary_detail(request, pk):
 class DiaryDeleteView(View):
     def post(self, request, pk):
         diary = get_object_or_404(Diary, pk=pk)
-        diary.delete()
+        if diary.user == request.user:
+            diary.delete()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Your diary entry has been deleted!'
+                )
         return redirect(reverse('vinoteka'))
