@@ -1,13 +1,15 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
+
 
 <div class="container">
   <div class="row">
     <!-- Image -->
     <div class="col-md-4">
-      <img src="{{ diary.image.url }}" class="img-fluid" alt="{{ diary.wine }}">
+      <img src="{% if diary.image.url %}{{ diary.image.url }}{% else %}{% static 'img/diarydefault.jpg' %}{% endif %}" class="img-fluid" alt="{{ diary.wine }}">
     </div>
+
   
     <!-- Diary details -->
     <div class="col-md-8">
@@ -47,6 +49,7 @@
       </div>
     </div>
   <!-- Navigation Btn -->
+  <div class="d-flex justify-content-center">
   <a href="{% url 'vinoteka' %}" class="btn btn-signup">Back to Vinoteka</a>
   <!-- Delete Btn an confirmation modal -->
   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
@@ -73,4 +76,7 @@
       </div>
     </div>
   </div>
+</div>
+</div>
+
 {% endblock %}
