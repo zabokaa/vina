@@ -36,10 +36,12 @@ If you do not want to register for testing feel free to use:
 ### As a Logged-in-user [...]
 
 - I want to add and delete wines to my private library/vinotheque.
-- I want to add a new entry (= post) for a wine.
 - I want to commment on my own or others users' post.
 - I want to be able to edit or delete my comments.
 - I want to see if I am logged-in or not.
+- I want to lika and unlike Posts.
+- I want to see the list of all my liked Posts, and being transferred to that one when clicking on it. 
+- I want to be transferred to the Post when 
 - I expect a consistent and responsive design for easy use on various devices, prioritizing mobile devices first.
 
 ### As a Guest-user [...]
@@ -111,7 +113,7 @@ I did research about feminist typography and picked two fonts out of those sugge
 
 ## Technologies
 
-Python | HTML | CSS | JavaScript | Django | Bootstrap5 | Whitenoise | Gunicorn | Crispy
+Python | HTML | CSS | JavaScript | Django | Bootstrap5 | Whitenoise | Gunicorn | Crispy | Neon Postgres DB | Heroku
 
 ## Project Status
 
@@ -145,6 +147,6 @@ Project is: in process
 
 ## Acknowledgements
 
-This project was based on full-stack course @ Code Institute.
+This project is based on full-stack course @ Code Institute, especially the Walk-through-project "I Think Therefore I Blog"
 
-Creating ERD of whole project with Djangoviz [from](https://atlasgo.io/blog/2023/05/17/djangoviz)
+Creating ERD of whole project with Djangoviz: [Source here](https://atlasgo.io/blog/2023/05/17/djangoviz)
