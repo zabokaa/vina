@@ -6,9 +6,11 @@
 <div class="container">
   <div class="row">
     <!-- Image -->
-    <div class="col-md-4">
-      <img src="{% if diary.image.url %}{{ diary.image.url }}{% else %}{% static 'img/diarydefault.jpg' %}{% endif %}" class="img-fluid" alt="{{ diary.wine }}">
-    </div>
+    {% if diary.pic %}
+      <img src="{{ diary.pic.url }}" alt="imagage of {{ diary.wine }}">
+    {% else %}
+      <img src="{% static 'img/diarydefault.jpg' %}" alt="image of {{ diary.wine }}">
+    {% endif %}
 
     <!-- Diary details -->
     <div class="col-md-8">
