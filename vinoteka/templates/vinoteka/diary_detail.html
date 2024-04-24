@@ -3,13 +3,12 @@
 {% block content %}
 <h2>{{ diary.wine }}</h2>
 <p>{{ diary.rating }}</p>
-
-<!-- Delete button that triggers the modal -->
+<!-- Navigation Btn -->
+<a href="{% url 'vinoteka' %}" class="btn btn-signup">Back to Vinoteka</a>
+<!-- Delete Btn an confirmation modal -->
 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
-    Delete
+    Delete Entry
   </button>
-  
-  <!-- Delete confirmation modal -->
   <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">

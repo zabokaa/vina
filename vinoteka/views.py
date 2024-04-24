@@ -81,4 +81,4 @@ class DiaryDeleteView(View):
     def post(self, request, pk):
         diary = get_object_or_404(Diary, pk=pk)
         diary.delete()
-        return redirect(reverse('diary_list'))
+        return redirect(reverse('vinoteka'))
