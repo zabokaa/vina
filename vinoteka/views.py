@@ -1,6 +1,7 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.contrib import messages
+from django.views import View
 from blog.models import Post
 from .models import Diary
 from .forms import DiaryForm
@@ -75,3 +76,9 @@ def diary_detail(request, pk):
         {'diary': diary}
         )
 
+
+class DiaryDeleteView(View):
+    def post(self, request, pk):
+        diary = get_object_or_404(Diary, pk=pk)
+        diary.delete()
+        return redirect(reverse('diary_list'))
