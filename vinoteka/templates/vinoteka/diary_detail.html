@@ -36,9 +36,24 @@
                 <th scope="row">Day</th>
                 <td>{{ diary.day }}</td>
               </tr>
+              {% if diary.memory %}
               <tr>
                 <th scope="row">Memory</th>
                 <td>{{ diary.memory }}</td>
+              </tr>
+              {% endif %}
+              {% if diary.foodpairing %}
+              <tr>
+                <th scope="row">Foodpairing</th>
+                <td>{{ diary.foodpairing }}</td>
+              </tr>
+              {% endif %}
+              <tr>
+                <td>
+                  {% if diary.again %}I want to buy it again
+                  {% else %}Remember to not buy it again
+                  {% endif %}
+                </td>
               </tr>
             </tbody>
           </table>
