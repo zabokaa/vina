@@ -103,6 +103,9 @@ If you do not want to register for testing the Viña App feel free to use:
 
   ![listofliked](./assets/imgreadme/listofliked.png)
 
+- Displaying list of liked/unliked wine posts, name linked to that post.
+- Marquee with info if a logged in user wants to become a super user.
+
 #### Create new Diary Entry
 
   ![newdiary](./assets/imgreadme/newdiary.png)
@@ -126,7 +129,7 @@ If you do not want to register for testing the Viña App feel free to use:
 
 ### Footer
 
-  ![footer](./assets/img/footer.png)
+  ![footer](./assets/imgreadme/footer.png)
 
 - The footer contains a short impressum and links to social media accounts.
 
@@ -157,7 +160,16 @@ If you do not want to register for testing the Viña App feel free to use:
 
 #### Solved
 
+- Comments couldn't be saved due to the status field not accepting input. This was resolved by replacing the CharField with the correct IntegerField.
+- Alert was missing for users when they entered no age and pressed the submit button. This has been rectified.
+- When a non-logged-in user clicked the like button, they were correctly redirected to the login form. However, after submission, there was no correct redirection. This issue has been fixed by updating the return HttpResponseRedirect.
+- The navbar toggle icon was not visible. This was addressed with a workaround using CSS.
+- Previously, uploaded user images were not displayed. This was fixed by setting enctype="multipart/form-data" in the form, allowing file uploads to function correctly. Oooh yess!
+
 #### Unsolved
+
+- Currently, users can bypass the age verification process by directly accessing /blog or /vinoteka URLs in the browser. While users can input a false age, it's challenging to enforce strict control over this aspect. The age verification serves as more of a soft barrier, reminding users rather than providing foolproof age verification.
+- Date validation for new diary entry is working with default build in validation, but not on the ../movieteka site. For now user will be redirected to an unstyled site where the error is indicated and can be changed.
 
 ## Technologies
 
