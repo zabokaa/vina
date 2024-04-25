@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 # Model:
 class Diary(models.Model):
@@ -28,7 +29,7 @@ class Diary(models.Model):
     day = models.DateField()
     occasion = models.CharField(max_length=200)
     rating = models.IntegerField()
-    pic = models.ImageField(upload_to='diary_pics/', blank=True, null=True)
+    pic = CloudinaryField('image', blank=True, null=True)
     memory = models.TextField(blank=True, null=True)
     foodpairing = models.TextField(blank=True, null=True)
     again = models.BooleanField(default=False)
