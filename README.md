@@ -1,12 +1,12 @@
 # :purple_circle: *Viña - your vinotheque* :purple_circle:
 
-Have you ever found yourself standing in front of the overwhelming wine cupboard in a supermarket, not knowing what to buy? Me: Yes! And my friends too. I was imagining how great it would be to have an app that serves as both my private wine library and a platform for showcasing recommendations from my friends. Even better, with their stories of the evening added - helping me remember which wine I like.
+Have you ever found yourself standing in front of the overwhelming wine cupboard in a supermarket, not knowing what to buy? Me: Yes! And my friends too. I was imagining how great it would be to have an app that serves as both my private wine library and a platform for showcasing.
 
  ![mockup](./assets/imgreadme/vinamockup.png)
 
 🍷 The deployed page can be found [here](https://vina1312-ae94d8859b43.herokuapp.com/) 🍷
 
-If you do not want to register for testing feel free to use:
+If you do not want to register for testing the Viña App feel free to use:
 <Username: Winelover>
 <Password: oenology>
 
@@ -16,6 +16,7 @@ If you do not want to register for testing feel free to use:
 - [User Stories](#user-stories)
 - [Key Features](#key-features)
 - [Design](#design)
+  - [ERD](#erd)
 - [Testing](#testing)
   - [Manual](#manual)
   - [Official Validators](#official-validators)
@@ -59,26 +60,39 @@ If you do not want to register for testing feel free to use:
 
 ### Menu
 
-### Start Page
+### Pre-Entry Page
 
   ![intro](./assets/img/intro.png)
 
 - The page has the title 'FeministQuiz,' and after the welcoming, there is a short description about the topic of the quiz.
 - Below, the user sees a box displaying the rules of the quiz.
 
+
+### Home (= all Posts)
+
+#### Details of 1 specific Post with like/unlike Function
+
+#### Create / Edit / Delete a Comment
+
 ### User Login
 
   ![username](./assets/img/startQuiz.png)
-
-### Home (= all Posts)
 
 ### Register
 
   ![modal](./assets/img/modal.png)
 
-### My Vinoteka
+### My Vinotheque
 
   ![endQuiz](./assets/img/scoreAgain.png)
+
+#### List of Liked Post
+
+#### Create new Diary Entry
+
+#### Overview of Diary Entries
+
+#### Details of 1 Diary Entry
 
 ### Footer
 
@@ -88,11 +102,9 @@ If you do not want to register for testing feel free to use:
 
 ## Design
 
+### ERD
+
 ### Colors
-
-### Typography
-
-I did research about feminist typography and picked two fonts out of those suggestions. The font used for the headline is reminiscent of historical typefaces and therefore fits well for a quiz on the history of feminist achievements in Germany.
 
 ### Logo
 
@@ -110,6 +122,10 @@ I did research about feminist typography and picked two fonts out of those sugge
 ### Automated
 
 ### Bugs
+
+#### Solved
+
+#### Unsolved
 
 ## Technologies
 
