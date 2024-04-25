@@ -62,13 +62,15 @@ If you do not want to register for testing the Viña App feel free to use:
 
 ### Pre-Entry Page
 
-  ![intro](./assets/img/intro.png)
+  ![intro](./assets/imgreadme/agever.png)
 
-- The page has the title 'FeministQuiz,' and after the welcoming, there is a short description about the topic of the quiz.
-- Below, the user sees a box displaying the rules of the quiz.
-
+- The welcome page has a age verification.
+- Validating for entry and age >= 18.
+- Header not displaying Navbar links in order not to be able to avoid age validation.
 
 ### Home (= all Posts)
+
+   ![home](./assets/imgreadme/bloghome.png)
 
 #### Details of 1 specific Post with like/unlike Function
 
