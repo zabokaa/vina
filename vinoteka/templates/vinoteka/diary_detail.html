@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
+{% load cloudinary}
+
 {% block content %}
 
 
@@ -7,7 +9,11 @@
   <div class="row">
     <!-- Image -->
     <div class="col-md-4">
-      <img src="{% if diary.pic %}{{ diary.pic.url }}{% else %}{% static 'img/diarydefault.jpg' %}{% endif %}" class="img-fluid" alt="{{ diary.wine }}">
+      {% if diary.pic %}
+      <img src="{{ diary.pic.url }}" class="img-fluid" alt="image of {{ diary.wine }}">
+      {% else %}
+      <img src="{% static 'img/default.jpg' %}" class="img-fluid" alt="placeholder image">
+      {% endif %}
     </div>
     <!-- Diary details -->
     <div class="col-md-8">

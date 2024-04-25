@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.contrib import messages
 from django.views import View
-from blog.models import Post
+from blog.models import Post 
 from .models import Diary
 from .forms import DiaryForm
 
@@ -43,12 +43,11 @@ def create_diary(request):
             diary = form.save(commit=False)
             diary.user = request.user
             diary.save()
-            # trying to debug
-            print(diary)
             messages.add_message(
                 request, messages.SUCCESS,
                 'Your diary entry has been added!'
                 )
+            print(form.errors)
             return redirect('vinoteka')
         else:
             messages.add_message(
