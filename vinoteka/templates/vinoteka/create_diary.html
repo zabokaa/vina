@@ -9,6 +9,7 @@
     enctype="multipart/form-data"
     >
     {% csrf_token %}
+    {{ form.non_field_errors }}
     {{ form|crispy }}
     <button id="submitButton" type="submit"
     class="btn btn-signup btn-lg">Create</button>

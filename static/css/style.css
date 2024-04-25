@@ -104,26 +104,6 @@ body {
     color: white;
     position: relative;
 }
-
-.bloghead-img {
-    position: relative;
-    overflow: hidden;
-}
-
-.bloghead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
-
 .page-link {
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);

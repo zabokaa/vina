@@ -58,8 +58,6 @@ If you do not want to register for testing the Viña App feel free to use:
 
 ## Key Features
 
-### Menu
-
 ### Pre-Entry Page
 
   ![intro](./assets/imgreadme/agever.png)
@@ -133,9 +131,20 @@ If you do not want to register for testing the Viña App feel free to use:
 
 - The footer contains a short impressum and links to social media accounts.
 
-## Database
+## Models
 
-    ![ERD](./assets/imgreadme/xx.png)
+The Viña project has 4 models:
+
+- Post model in the blog app is based on the Walkthrough project, and highly customized by me.
+- Comment model in the blog app is based on the Walkthrough project.
+- Diary model in the vinoteka app completely created by me.
+- User model created by Django AllAuth.
+
+See the Entity Realtionship Diagram here:
+
+  ![ERD](./assets/imgreadme/erd.png)
+
+ERD had been created with Djangoviz: [PublicLink](https://gh.atlasgo.cloud/explore/ad1d21c7)
 
 ## Design
 
@@ -211,4 +220,4 @@ Project is: in process
 
 This project is based on full-stack course @ Code Institute, especially the Walk-through-project "I Think Therefore I Blog"
 
-Creating ERD of whole project with Djangoviz: [Source here](https://atlasgo.io/blog/2023/05/17/djangoviz)
+
