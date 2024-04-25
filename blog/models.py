@@ -1,9 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.urls import reverse
 
 STATUS_CHOICES = ((0, "draft"), (1, "published"))
-# Create your models here.
+
+# Models
 class Post(models.Model):
     """
     A model representing a blog post about a wine.
@@ -22,7 +22,6 @@ class Post(models.Model):
 
     The posts are ordered by the 'created_on' field in descending order.
     """
-
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -33,13 +32,10 @@ class Post(models.Model):
     shop = models.CharField(max_length=200)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS_CHOICES, default=0) 
-    likes = models.ManyToManyField(User, related_name='liked_posts')                
-
-# Meta Class
+    status = models.IntegerField(choices=STATUS_CHOICES, default=0)
+    likes = models.ManyToManyField(User, related_name='liked_posts')
     class Meta:
         ordering = ["created_on"]
-# Dunder Method
     def __str__(self):
         return f"{self.title} | suggested by {self.author}"
 
@@ -61,4 +57,4 @@ class Comment(models.Model):
         ordering = ["created_on"]
     def __str__(self):
         return f"Comment {self.body} by {self.author}"
-    
+

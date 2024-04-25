@@ -37,7 +37,5 @@ class Diary(models.Model):
     class Meta:
         unique_together = ("user", "wine", "day")
         ordering = ["rating"]
-
-
     def __str__(self):
         return f"{self.user}'s diary entry for {self.wine}"

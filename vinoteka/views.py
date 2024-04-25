@@ -6,7 +6,7 @@ from blog.models import Post
 from .models import Diary
 from .forms import DiaryForm
 
-
+# Views
 def diary_list(request):
     """"
     Display list of all diary entries created by the currently logged-in user.

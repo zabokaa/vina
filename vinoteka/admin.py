@@ -2,6 +2,6 @@ from django.contrib import admin
 
 from .models import Diary
 
-# Register your models here.
+# Register model
 admin.site.register(Diary)
 
