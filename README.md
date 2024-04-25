@@ -46,9 +46,8 @@ If you do not want to register for testing the Viña App feel free to use:
 - I want to commment on my own or others users' post.
 - I want to be able to edit or delete my comments.
 - I want to see if I am logged-in or not.
-- I want to like and unlike Posts.
 - I want to see the list of all my liked Posts, and being transferred to that one when clicking on it.
-- I want to create a new Wine Diary entry, where I can decide by myself if I want to add an image, a memory text, or a foodpairing hint. 
+- I want to create a new Wine Diary entry, where I can decide by myself if I want to add an image, a memory text, or a foodpairing hint.
 - I want to see a list of all my diaries (or "nor entries yet" when there are none) with name of wine, ordered by my rating.
 - I want to display the specific diary entry when clicking on the name.
 - I want to delete a diary entry.
@@ -159,7 +158,7 @@ The primary color, wine red, immediately conjures associations with red wine. To
 
 ## Testing
 
-### Manual
+[HERE](./testing.md) are my steps testing all User Stories
 
 ### Official Validators
 
@@ -168,8 +167,6 @@ The primary color, wine red, immediately conjures associations with red wine. To
 - CI Python Linter [HERE](./assets/imgreadme/pylinter.png):  Some lines too long error -> formated code -> No errors
 - Lighthouse Chrome DevTools [HERE](./assets/img/lighthouse.png)
 Have been sucessfully tested for all pages, just displaying 1 example for each validator.
-
-### Automated
 
 ### Bugs
 
@@ -224,4 +221,3 @@ Project is: in process
 
 - This project is based on full-stack course @ Code Institute, especially the Walk-through-project "I Think Therefore I Blog"
 - Images from Pexels or mine.
-- As a template for my 'mantesting.md' I used the testing.md of [HerrFri](https://github.com/HerFri/RetroReview/blob/main/testing.md)
