@@ -66,43 +66,73 @@ If you do not want to register for testing the Viña App feel free to use:
 
 - The welcome page has a age verification.
 - Validating for entry and age >= 18.
-- Header not displaying Navbar links in order not to be able to avoid age validation.
+- Header not displaying navbar links in order not to be able to avoid age validation.
+
+### Header
+
+  ![header](./assets/imgreadme/header.png)
 
 ### Home (= all Posts)
 
    ![home](./assets/imgreadme/bloghome.png)
 
+- Displaying all wine blog entries
+- Pagination = 4 with previous and next buttons
+
 #### Details of 1 specific Post with like/unlike Function
+
+  ![detailwine](./assets/imgreadme/wineentry.png)
+
+- Displaying details of one wine
+- Like/unlike Button -> will be added/deleted to favorite wine list
+- Back Home button -> for better UX
 
 #### Create / Edit / Delete a Comment
 
+  ![edit](./assets/imgreadme/updatecom.png)
+
 ### User Login
 
-  ![username](./assets/img/startQuiz.png)
+  ![signin](./assets/imgreadme/signin.png)
 
-### Register
-
-  ![modal](./assets/img/modal.png)
+- Unlogged user will be transferred to Sign In when trying to add comment or use like/unlike button.
 
 ### My Vinotheque
 
-  ![endQuiz](./assets/img/scoreAgain.png)
-
 #### List of Liked Post
+
+  ![listofliked](./assets/imgreadme/listofliked.png)
 
 #### Create new Diary Entry
 
+  ![newdiary](./assets/imgreadme/newdiary.png)
+
+- Form with validation for rating and date-format.
+
 #### Overview of Diary Entries
 
+  ![diarylist](./assets/imgreadme/diarylist.png)
+
+- Table of diary entries, ordered by rating.
+- Name is linking to details of this diary entry.
+
 #### Details of 1 Diary Entry
+
+  ![onediary](./assets/imgreadme/deletediary.png)
+
+- Display wine diary entry with picture (placeholder pic or if it exists uploaded pic by user).
+- Delete entry or back to vinotheque buttons.
+- Modal for delete action.
 
 ### Footer
 
   ![footer](./assets/img/footer.png)
 
-- The footer contains a short impressum and my email address in case the user wants to contact me.
+- The footer contains a short impressum and links to social media accounts.
 
 ## Database
+
+    ![ERD](./assets/imgreadme/xx.png)
 
 ## Design
 
