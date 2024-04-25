@@ -6,8 +6,7 @@ Have you ever found yourself standing in front of the overwhelming wine cupboard
 
 🍷 The deployed page can be found [here](https://vina1312-ae94d8859b43.herokuapp.com/) 🍷
 
-If you do not want to register for testing the Viña App feel free to use:
-<Username: Winelover>
+If you do not want to register for testing the Viña App feel free to use:  <Username: Winelover>  
 <Password: oenology>
 
 ## Table of Contents
@@ -187,7 +186,7 @@ Have been sucessfully tested for all pages, just displaying 1 example for each v
 
 ## Technologies
 
-Python | HTML | CSS | JavaScript | Django | Bootstrap5 | Whitenoise | Gunicorn | Crispy | Neon Postgres DB | Heroku
+Python | HTML | CSS | JavaScript | Django | Bootstrap5 | Whitenoise | Gunicorn | Crispy | Neon Postgres DB | Cloudinary | Heroku
 
 ## Project Status
 
