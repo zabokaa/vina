@@ -141,6 +141,8 @@ If you do not want to register for testing the Viña App feel free to use:
 
 ### Colors
 
+The primary color, wine red, immediately conjures associations with red wine. To introduce a fresh contrast, I incorporated a light yet robust blue tone, reminiscent of the open skies often associated with vineyards. This combination captures both the depth of wine culture and the natural beauty of vineyard landscapes, creating a visually engaging experience for users.
+
 ### Logo
 
 ## Testing
