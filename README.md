@@ -190,29 +190,57 @@ Project is: in process
 
 ## Deployment
 
-- The site is deployed with Heroku.
+  From How to Start a Django Project till Access to your Deployed Site:
 
-  HOW TO:
+1. **Start a Django Project:**
+   Open your terminal (I am working wiht VS Code) and navigate to the directory where you want to create your project. Run the command `django-admin startproject your_project_name`.
 
-  1. **Go to Repository Settings:**
-  
-  2. **Scroll Down to GitHub Pages Section:**
-     In the Settings, scroll down to the "GitHub Pages" section.
-  
-  3. **Choose Your Source Branch:**
-     Under "Source," select the branch you want to use for GitHub Pages (e.g., `main`).
-  
-  4. **Save Your Changes:**
-     Save the changes. GitHub Pages will provide you with a link to your deployed site.
-  
-  5. **Wait for the Build:**
-     GitHub Pages will now build and deploy your site. Wait for the process to complete.
-  
-  6. **Access Your Deployed Site:**
-     Once the build is successful, you can access your deployed site using the provided link.
+2. **Create a New Django App:**
+   Navigate into your new project directory with `cd your_project_name` and run the command `python manage.py startapp your_app_name`.
 
-  Your project is now live on GitHub Pages!
-  🍷 Cheers !!
+3. **Create a Model:**
+   In your new app directory, open the `models.py` file and define your model classes.
+
+4. **Create a View:**
+   In the same app directory, open the `views.py` file and define your view functions or classes.
+
+5. **Update URLs:**
+   Update the `urls.py` files in your project and app directories to route to your new views.
+
+6. **Run Migrations:**
+   Run `python manage.py makemigrations` and `python manage.py migrate` to create and apply migrations for your new models.
+
+7. **Test Your App Locally:**
+   Run `python manage.py runserver` to start the development server and access your app in your web browser.
+
+8. **Login to Heroku:**
+   Run `heroku login` and enter your Heroku credentials.
+
+9. **Create a New Heroku App:**
+   Navigate to Heroku and click on "New" > "Create new app". Enter the app name (e.g., "goodfood"), and click "Create app".
+
+10. **Update Settings:**
+    Update your `settings.py` file to be compatible with Heroku. This includes setting `DEBUG` to `False` (always before deploying with Heroku!), adding your Heroku app URL to `ALLOWED_HOSTS`, and configuring your database to use Neon Postgres.
+
+11. **Back to Heroku Configure Environment Variables:**
+   Navigate to "Settings" > "Config Vars" and click "Reveal Config Vars". Add a new variables with the keys for `SECRET_KEY`, for connecting to Database `DATABASE_URL`, and for storaging media files in a cloud aswell `CLOUDINARY_URL`
+
+12. **Connect with GitHub:**
+   Navigate to the "Deploy" section, connect with GitHub, and choose your repository name.
+
+13. **Choose Deployment Method:**
+   Decide if you want to deploy manually or enable automatic deployment after every commit to GitHub.
+
+14. **Access Your Deployed Site:**
+   Once done, your application will be live. Yippie!
+
+15. **Access Your Deployed Site:**
+    Once the build is successful, you can access your deployed site using the URL provided by Heroku.
+
+16. **Clone and Install Dependencies:**
+   If you want to clone this repository, you can easily install all necessary versions and libraries using `pip install -r requirements.txt`.
+
+🍷 Cheers !!
 
 ## Acknowledgements
 
