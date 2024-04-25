@@ -160,10 +160,11 @@ The primary color, wine red, immediately conjures associations with red wine. To
 
 ### Official Validators
 
-- [W3C HTML Validator](./assets/img/htmlVal.png): No errors
-- [W3C CSS Validator](./assets/img/CSSvalidator.png):  No errors
-- [Lighthouse Chrome DevTools](./assets/img/lighthouseVal.png): Accessibility 100
-- [WAVE](./assets/img/WAVEval.png): No errors for accessibility and color contrast
+- W3C HTML Validator [HERE](./assets/imgreadme/htmlchecker.png): No errors
+- W3C CSS Validator [HERE](./assets/imgreadme/jigsaw.png.png):  No errors
+- CI Python Linter [HERE](./assets/imgreadme/pylinter.png):  Some lines too long error -> formated code -> No errors
+- Lighthouse Chrome DevTools [HERE](./assets/img/lighthouse.png)
+Have been sucessfully tested for all pages, just displaying 1 example for each validator.
 
 ### Automated
 
