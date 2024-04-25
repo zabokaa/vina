@@ -38,11 +38,13 @@ def create_diary(request):
     for the currently logged-in user.
     """
     if request.method == 'POST':
-        form = DiaryForm(request.POST)
+        form = DiaryForm(request.POST, request.FILES)
         if form.is_valid():
             diary = form.save(commit=False)
             diary.user = request.user
             diary.save()
+            # trying to debug
+            print(diary)
             messages.add_message(
                 request, messages.SUCCESS,
                 'Your diary entry has been added!'
