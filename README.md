@@ -219,6 +219,6 @@ Project is: in process
 
 ## Acknowledgements
 
-This project is based on full-stack course @ Code Institute, especially the Walk-through-project "I Think Therefore I Blog"
-
-
+- This project is based on full-stack course @ Code Institute, especially the Walk-through-project "I Think Therefore I Blog"
+- Images from Pexels or mine.
+- As a template for my 'mantesting.md' I used the testing.md of [HerrFri](https://github.com/HerFri/RetroReview/blob/main/testing.md)
