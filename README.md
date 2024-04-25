@@ -15,8 +15,8 @@ If you do not want to register for testing the Viña App feel free to use:
 - [Objective](#objective)
 - [User Stories](#user-stories)
 - [Key Features](#key-features)
+- [Database](#database)
 - [Design](#design)
-  - [ERD](#erd)
 - [Testing](#testing)
   - [Manual](#manual)
   - [Official Validators](#official-validators)
@@ -100,9 +100,9 @@ If you do not want to register for testing the Viña App feel free to use:
 
 - The footer contains a short impressum and my email address in case the user wants to contact me.
 
-## Design
+## Database
 
-### ERD
+## Design
 
 ### Colors
 
