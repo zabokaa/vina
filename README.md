@@ -15,10 +15,8 @@ If you do not want to register for testing the Viña App feel free to use:
 - [Objective](#objective)
 - [User Stories](#user-stories)
 - [Key Features](#key-features)
-- [Database](#database)
 - [Design](#design)
 - [Testing](#testing)
-  - [Manual](#manual)
   - [Official Validators](#official-validators)
   - [Bugs](#bugs)
 - [Technologies](#technologies)
@@ -51,7 +49,6 @@ If you do not want to register for testing the Viña App feel free to use:
 - I want to see a list of all my diaries (or "nor entries yet" when there are none) with name of wine, ordered by my rating.
 - I want to display the specific diary entry when clicking on the name.
 - I want to delete a diary entry.
-
 
 ### As a Super-user = Admin [...]
 
@@ -220,4 +217,4 @@ Project is: in process
 ## Acknowledgements
 
 - This project is based on full-stack course @ Code Institute, especially the Walk-through-project "I Think Therefore I Blog"
-- Images from Pexels or mine.
+- Images from Pexels or mine
