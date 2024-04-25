@@ -34,22 +34,25 @@ If you do not want to register for testing the Viña App feel free to use:
 
 ## User Stories
 
+### As a Guest-user [...]
+
+- I want to read recommendations (posts and comments).
+- I want to easily navigate the site.
+- I want to be able to create my own profile.
+
 ### As a Logged-in-user [...]
 
 - I want to add and delete wines to my private library/vinotheque.
 - I want to commment on my own or others users' post.
 - I want to be able to edit or delete my comments.
 - I want to see if I am logged-in or not.
-- I want to lika and unlike Posts.
-- I want to see the list of all my liked Posts, and being transferred to that one when clicking on it. 
-- I want to be transferred to the Post when 
-- I expect a consistent and responsive design for easy use on various devices, prioritizing mobile devices first.
+- I want to like and unlike Posts.
+- I want to see the list of all my liked Posts, and being transferred to that one when clicking on it.
+- I want to create a new Wine Diary entry, where I can decide by myself if I want to add an image, a memory text, or a foodpairing hint. 
+- I want to see a list of all my diaries (or "nor entries yet" when there are none) with name of wine, ordered by my rating.
+- I want to display the specific diary entry when clicking on the name.
+- I want to delete a diary entry.
 
-### As a Guest-user [...]
-
-- I want to read recommendations (posts and comments).
-- I want to easily navigate the site.
-- I want to be able to create my own profile.
 
 ### As a Super-user = Admin [...]
 
