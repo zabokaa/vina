@@ -140,7 +140,7 @@ The Viña project has 4 models:
 - Diary model in the vinoteka app completely created by me.
 - User model created by Django AllAuth.
 
-See the Entity Relationship Diagram here:
+Entity Relationship Diagram:
 
   ![ERD](./assets/imgreadme/erd.png)
 
