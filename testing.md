@@ -1,19 +1,16 @@
-# Testing Guide
+# Testing 
 
 ## Navigation
 
-
-
 | Feature | Action                             | Expected Result                 | Status of Actual Result    |
-| :-----: | :---------------------------------:| :------------------------------:|
-| **Home Link Icon** | While not on the homepage, click the icon. | User is redirected back to homepage. |
-| **"Login" Link** | While not authenticated, click "Login". | User is directed to the Login page. |
-| **"Sign Up" Link** | While not authenticated, click "Sign Up". | User is directed to the Sign Up page. |
-| **"Game Details" Link** | Click on any game. | User is directed to the Game Detail page. |
-| **"Like" Link** | While authenticated, click on the thumb up. | Thumb fills color to orange |
-| **"unlike" Link** | While authenticated, click on the thumb up. | Thumb up filling disappears. |
-| **"Social Links" Link** | click "Social Links". | Opens new page in Browser and redirects to social media page. |
-| **"Logout" Link** | While authenticated, click "Logout". | User is directed to Logout Page |
+| :-----: | :---------------------------------:| :------------------------------:| :-------------------------:|
+| **"Login" Link** | While not authenticated, click "Login". | User is directed to the Login page. |  passed |
+| **"Sign Up" Link** | While not authenticated, click "Sign Up". | User is directed to the Sign Up page. |  passed |
+| **"Game Details" Link** | Click on any game. | User is directed to the Game Detail page. |  passed |
+| **"Like" Link** | While authenticated, click on the thumb up. | Thumb fills color to orange |  passed |
+| **"unlike" Link** | While authenticated, click on the thumb up. | Thumb up filling disappears. |  passed |
+| **"Social Links" Link** | click "Social Links". | Opens new page in Browser and redirects to social media page. |  passed |
+| **"Logout" Link** | While authenticated, click "Logout". | User is directed to Logout Page | passed |
 
 ## CRUD
 
