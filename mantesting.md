@@ -2,9 +2,9 @@
 
 ## Navigation
 
-All navigation links, including the home icon, can be found in the navbar or on small to medium screens in the burger drop-down menu.
 
-| Feature | Action                             | Expected Result                 |
+
+| Feature | Action                             | Expected Result                 | Status of Actual Result    |
 | :-----: | :---------------------------------:| :------------------------------:|
 | **Home Link Icon** | While not on the homepage, click the icon. | User is redirected back to homepage. |
 | **"Login" Link** | While not authenticated, click "Login". | User is directed to the Login page. |
