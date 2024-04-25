@@ -27,6 +27,7 @@ If you do not want to register for testing the Viña App feel free to use:
 ## Objective
 
 - Hands-on learning by building an interactive, data-based web app
+- Learning usage of Agile Methodology using Gibhub Projects, working with their [Kanban board](https://github.com/users/zabokaa/projects/3/views/2) + labels plus milestones for [Issues](https://github.com/zabokaa/vina/issues). It will be very valuable when working in a team in the future.
 - To offer a help for users to decide which bottle of wine to buy
 - Creating a platform for wine lovers to share their recomendations as well as their experiences
 
@@ -152,6 +153,10 @@ ERD had been created with Djangoviz: [PublicLink](https://gh.atlasgo.cloud/explo
 The primary color, wine red, immediately conjures associations with red wine. To introduce a fresh contrast, I incorporated a light yet robust blue tone, reminiscent of the open skies often associated with vineyards. This combination captures both the depth of wine culture and the natural beauty of vineyard landscapes, creating a visually engaging experience for users.
 
 ### Logo
+
+   ![logo](./static/img/vinalogo.png)
+
+The goal was for the logo to be both classic and hipster-modern, aiming to appeal to a wide range of age groups. Various age target groups should feel equally addressed. Additionally, the logo should not distract from the content. Therefore, it is kept monochromatic, in the secondary color.
 
 ## Testing
 
