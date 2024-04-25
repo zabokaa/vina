@@ -158,7 +158,7 @@ The primary color, wine red, immediately conjures associations with red wine. To
 
 ## Testing
 
-[HERE](./testing.md) are my steps testing all User Stories
+[HERE](./testing.md) are my steps of manually testing all User Stories. Since this project is relatively small and not too complex, manual testing is more efficient. Furthermore, I can check for UX.
 
 ### Official Validators
 
